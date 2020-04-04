@@ -1,0 +1,33 @@
+plugins {
+    id 'java'
+}
+
+group 'asia.kala'
+version '0.1.0-SNAPSHOT'
+
+sourceCompatibility = 9
+targetCompatibility = 9
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
+
+task processClassFile(dependsOn: compileJava) {
+    doLast {
+        FileTree tree = fileTree('build/classes/java/main')
+        tree.include '**/*.class'
+        tree.exclude 'module-info.class'
+        tree.each {
+            RandomAccessFile rf = new RandomAccessFile(it, "rw")
+            rf.seek(7)   // major version
+            rf.write(51) // java 7
+            rf.close()
+        }
+    }
+}
+
+jar.dependsOn(processClassFile)
