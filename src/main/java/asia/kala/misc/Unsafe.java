@@ -267,7 +267,7 @@ public final class Unsafe {
 
     /**
      * Sets all bytes in a given block of memory to a fixed value
-     * (usually zero).  This provides a <em>single-register</em> addressing mode。
+     * (usually zero).  This provides a <em>single-register</em> addressing mode.
      */
     public static void setMemory(long address, long bytes, byte value) {
         theUnsafe.setMemory(address, bytes, value);

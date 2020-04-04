@@ -32,6 +32,6 @@ Provide public alternative to `sun.misc` package.
     * `void storeFence()`
     * `void fullFence()`
   
-  * Before removing `sun.misc.Unsafe` in the JDK, delegate the implementation to it
+  * Before the `sun.misc.Unsafe` be removed, delegate the implementation to it
   
-  * After removing `sun.misc.Unsafe` in JDK, it will be migrated to JNI implementation while ensuring API compatibility
+  * After the `sun.misc.Unsafe` be removed, it will be migrated to JNI implementation while ensuring API compatibility
