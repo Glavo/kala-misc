@@ -4,7 +4,40 @@ Provide public alternative to `sun.misc` package.
 
 ### Adding Kala misc to your build
 
-// TODO
+First, you need to add the jcenter repository to your build:
+
+Maven: 
+```xml
+<repositories>
+  <repository>
+    <id>jcenter</id>
+    <url>https://jcenter.bintray.com</url>
+  </repository>
+</repositories>
+```
+
+Gradle:
+```groovy
+repositories {
+    jcenter()
+}
+```
+
+Then add dependencies:
+
+Maven:
+```xml
+<dependency>
+  <groupId>asia.kala</groupId>
+  <artifactId>kala-misc</artifactId>
+  <version>0.1.0</version>
+</dependency>
+```
+
+Gradle:
+```groovy
+implementation group: 'asia.kala', name: 'kala-misc', version: '0.1.0'
+```
 
 ### Features
 
