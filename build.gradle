@@ -1,7 +1,7 @@
 plugins {
     id 'java'
     id 'maven-publish'
-    id 'com.jfrog.bintray' version '1.8.4'
+    id 'com.jfrog.bintray' version '1.8.5'
 }
 
 group 'asia.kala'
@@ -68,7 +68,7 @@ bintray {
         name = project.name
         licenses = ['Apache-2.0']
         publicDownloadNumbers = true
-        vcsUrl = 'https://github.com/kala-projects/kala-misc.git'
+        vcsUrl = 'https://github.com/Glavo/kala-misc.git'
         version {
             name = project.version
             desc = "${project.name} ${project.version}"

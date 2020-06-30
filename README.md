@@ -1,5 +1,7 @@
 ## Kala misc
 
+[ ![Download](https://api.bintray.com/packages/glavo/maven/kala-misc/images/download.svg) ](https://bintray.com/glavo/maven/kala-misc/_latestVersion)
+
 Provide public alternative to `sun.misc` package.
 
 ### Adding Kala misc to your build
