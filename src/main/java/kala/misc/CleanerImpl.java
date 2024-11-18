@@ -1,4 +1,4 @@
-package asia.kala.misc;
+package kala.misc;
 
 import java.lang.ref.PhantomReference;
 import java.lang.ref.ReferenceQueue;
